@@ -1,3 +1,5 @@
+var number = 1
+
 function takeANumber(deliLine) {
   var customerNumber = (deliLine.length + 1)
   deliLine.push(customerNumber);
@@ -25,7 +27,7 @@ function currentLine(lineArray) {
 }
 
 function nowServing(deliLine) {
-  var nowServedCustomer = deliLine.shift();
+  var nowServedCustomer = deliLine.shift;
 
   if (!nowServedCustomer) {
     return "There is nobody waiting to be served!";
